@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 // import AnimateText from '@/Components/AnimateText'
 // import Layout from '@/Components/Layout'
-// import Head from 'next/head'
+import Head from 'next/head'
 // import Link from 'next/link'
 // import Image from 'next/image'
 // import arti from '../../public/images/articles/form validation in reactjs using custom react hook.png'
@@ -72,7 +72,7 @@ export default function articles() {
                 <title>Shubham Ghodkhande | Articles Page</title>
                 <meta name='description' content='any description' />
             </Head>
-            <TransitionEffect/>
+            {/* <TransitionEffect/> */}
             <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
                 {/* <Layout className='pt-16'>
                     <AnimateText text="Words can change the world!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
