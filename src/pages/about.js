@@ -42,9 +42,7 @@ const AnimateNumbers = ({value}) =>{
   return <span ref={ref}></span>
 }
 
-
-export default function about() {
-
+const ResponsiveImage = ({ ay, ay2 }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -60,6 +58,21 @@ export default function about() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  return (
+    <div>
+      {isMobile ? (
+        <Image src={ay} alt='ayushi' className='' />
+      ) : (
+        <Image src={ay2} alt='ayushi' className='mb-12 shadow-lg' />
+      )}
+    </div>
+  );
+};
+
+
+export default function about() {
+
+  
 
   return (
     <>
@@ -70,16 +83,11 @@ export default function about() {
       <TransitionEffect/>
       <main className='flex w-full flex-col items-center justify-center dark:text-light'>
     
-
           {/* <AnimateText text=' Hey! I am Ayushi Agrawal creator of A2 Studio & I am an Interior Designer.' 
           className='!text-3xl !-mx-20 -translate-y-40 w-[30%] mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl absolute'/> */}
         <Layout className="pt-8 md:!pt-10 flex flex-col justify-center items-center">
         {/* <Image src={ay2} className='py-8'></Image> */}
-        {isMobile ? (
-            <Image src={ay} className='' />
-          ) : (
-            <Image src={ay2} className='mb-12 shadow-lg' />
-          )}
+<ResponsiveImage ay={ay} ay2={ay2} />
           <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
             <div className='col-span-6 flex flex-col items-start justify-start xl:col-span-8'>
               <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75'>About me</h2>
