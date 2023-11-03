@@ -1,5 +1,5 @@
 import React from 'react'
-// import Head from 'next/head'
+import Head from 'next/head'
 // import Layout from '@/Components/Layout'
 // import AnimateText from '@/Components/AnimateText'
 // import Link from 'next/link'
@@ -65,7 +65,7 @@ export default function projects() {
             <title>Shubham Ghodkhande | Projects Page</title>
             <meta name='description' content='any description' />
         </Head>
-        <TransitionEffect/>
+        {/* <TransitionEffect/> */}
         <main className='w-full flex mb-16 items-center justify-center flex-col dark:text-light'>
             {/* <Layout className='pt-16'>
                 <AnimateText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
