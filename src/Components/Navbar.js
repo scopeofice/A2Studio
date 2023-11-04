@@ -75,7 +75,7 @@ export default function Navbar() {
     className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm transform ${isOpen ? 'rotate-45 translate-y-1.5' : 'rotate-0 -translate-y-0.5'}`}
   ></span>
   <span
-    className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-1 opacity-${isOpen ? '0' : '1'}`}
+   className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-1  ${isOpen ? 'opacity-0' : 'opacity-1'}`}
   ></span>
   <span
     className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm transform ${isOpen ? '-rotate-45 -translate-y-1.5' : 'rotate-0 translate-y-0.5'}`}
