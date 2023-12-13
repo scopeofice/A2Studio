@@ -187,11 +187,13 @@ a {
     width: 200px;
     left: 10px;
   }
+  .item .name{
+    font-size: 20px;
+  }
   .item .des{
-    font-size: 16px;
+    display: none;
   }
 }
-
 .item:nth-child(2) .content{
   display: block;
   z-index: 11111;

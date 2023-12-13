@@ -23,7 +23,7 @@ export default function Home() {
       <TransitionEffect/>
       <main className='flex items-center bg-pastel text-dark w-full min-h-screen dark:text-light'>
 
-        <Layout className=' pt-10 lg:pt-10 md:pt-10 sm:pt-0 overflow-hidden'>
+        <Layout className=' pt-10 lg:pt-10 md:pt-10 sm:pt-8 overflow-hidden'>
           {/* <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-full'>
             </div>
